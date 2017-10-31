@@ -1,3 +1,5 @@
+//SF Breacher Casual
+
 comment "Exported from Arsenal by Lewis";
 
 comment "Remove existing items";
@@ -45,6 +47,7 @@ this setSpeaker "ace_novoice";
 
 
 
+//SF Breacher Combat 
 
 comment "Exported from Arsenal by Lewis";
 
@@ -90,6 +93,7 @@ this setFace "WhiteHead_16";
 this setSpeaker "ace_novoice";
 
 
+//SF Commo Casual
 
 comment "Exported from Arsenal by Lewis";
 
@@ -138,6 +142,7 @@ this setFace "WhiteHead_16";
 this setSpeaker "ace_novoice";
 
 
+//SF Commo Combat 
 
 comment "Exported from Arsenal by Lewis";
 
@@ -186,6 +191,7 @@ this setFace "WhiteHead_16";
 this setSpeaker "ace_novoice";
 
 
+//SF DM Casual
 
 comment "Exported from Arsenal by Lewis";
 
@@ -230,7 +236,7 @@ comment "Set identity";
 this setFace "WhiteHead_16";
 this setSpeaker "ace_novoice";
 
-
+//SF DM Combat
 
 comment "Exported from Arsenal by Lewis";
 
@@ -269,6 +275,7 @@ this setFace "WhiteHead_16";
 this setSpeaker "ace_novoice";
 
 
+//SF Leader Casual
 
 comment "Exported from Arsenal by Lewis";
 
@@ -317,6 +324,7 @@ this setFace "WhiteHead_16";
 this setSpeaker "ace_novoice";
 
 
+//SF Leader Combat
 
 comment "Exported from Arsenal by Lewis";
 
@@ -365,4 +373,208 @@ this setFace "WhiteHead_16";
 this setSpeaker "ace_novoice";
 
 
+//SF Medical Casual
 
+comment "Exported from Arsenal by Lewis";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "TRYK_shirts_PAD_BLW";
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_elasticBandage";};
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_quikclot";};
+this addItemToUniform "ACE_CableTie";
+this addItemToUniform "ACE_EarPlugs";
+this addItemToUniform "ACE_MapTools";
+this addItemToUniform "ACE_microDAGR";
+this addVest "CUP_V_I_RACS_Carrier_Rig_3";
+for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+this addBackpack "CUP_B_AssaultPack_Coyote";
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_fieldDressing";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_elasticBandage";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_quikclot";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_epinephrine";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_morphine";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_packingBandage";};
+this addItemToBackpack "ACE_personalAidKit";
+for "_i" from 1 to 5 do {this addItemToBackpack "ACE_plasmaIV_250";};
+for "_i" from 1 to 5 do {this addItemToBackpack "ACE_plasmaIV_500";};
+for "_i" from 1 to 5 do {this addItemToBackpack "ACE_salineIV_250";};
+this addItemToBackpack "ACE_surgicalKit";
+for "_i" from 1 to 5 do {this addItemToBackpack "ACE_tourniquet";};
+this addHeadgear "CUP_H_TKI_Pakol_2_02";
+this addGoggles "TRYK_Shemagh";
+
+comment "Add weapons";
+this addWeapon "rhs_weap_m4a1_d";
+this addPrimaryWeaponItem "rhsusf_acc_anpeq15_wmx_light";
+this addPrimaryWeaponItem "rhsusf_acc_eotech_552_d";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+
+comment "Set identity";
+this setFace "WhiteHead_16";
+this setSpeaker "ace_novoice";
+
+
+//SF Medical Combat
+
+comment "Exported from Arsenal by Lewis";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "TRYK_U_B_wood3c_CombatUniformTshirt";
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_elasticBandage";};
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_quikclot";};
+this addItemToUniform "ACE_CableTie";
+this addItemToUniform "ACE_EarPlugs";
+this addItemToUniform "ACE_MapTools";
+this addItemToUniform "ACE_microDAGR";
+this addVest "CUP_V_I_RACS_Carrier_Rig_3";
+for "_i" from 1 to 3 do {this addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+this addBackpack "CUP_B_AssaultPack_Coyote";
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_fieldDressing";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_elasticBandage";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_quikclot";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_epinephrine";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_morphine";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_packingBandage";};
+this addItemToBackpack "ACE_personalAidKit";
+for "_i" from 1 to 5 do {this addItemToBackpack "ACE_plasmaIV_250";};
+for "_i" from 1 to 5 do {this addItemToBackpack "ACE_plasmaIV_500";};
+for "_i" from 1 to 5 do {this addItemToBackpack "ACE_salineIV_250";};
+this addItemToBackpack "ACE_surgicalKit";
+for "_i" from 1 to 5 do {this addItemToBackpack "ACE_tourniquet";};
+this addHeadgear "CUP_H_PMC_Cap_Back_EP_Grey";
+this addGoggles "TRYK_Shemagh_G";
+
+comment "Add weapons";
+this addWeapon "rhs_weap_m4a1_d";
+this addPrimaryWeaponItem "rhsusf_acc_anpeq15_wmx_light";
+this addPrimaryWeaponItem "rhsusf_acc_eotech_552_d";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "TFAR_anprc152";
+
+comment "Set identity";
+this setFace "WhiteHead_18";
+this setSpeaker "male05eng";
+
+
+//SF Weapons Casual
+
+comment "Exported from Arsenal by Lewis";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "TRYK_shirts_PAD_YEL";
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_elasticBandage";};
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_quikclot";};
+this addItemToUniform "ACE_CableTie";
+this addItemToUniform "ACE_EarPlugs";
+this addItemToUniform "ACE_MapTools";
+this addItemToUniform "ACE_microDAGR";
+this addVest "CUP_V_I_RACS_Carrier_Rig_3";
+this addItemToVest "rhs_200rnd_556x45_M_SAW";
+this addBackpack "CUP_B_AssaultPack_Coyote";
+for "_i" from 1 to 2 do {this addItemToBackpack "rhs_200rnd_556x45_M_SAW";};
+this addHeadgear "CUP_H_TKI_Pakol_2_04";
+this addGoggles "TRYK_Shemagh";
+
+comment "Add weapons";
+this addWeapon "rhs_weap_m249_pip_S_para";
+this addPrimaryWeaponItem "rhsusf_acc_eotech_552";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "TFAR_anprc152";
+
+comment "Set identity";
+this setFace "WhiteHead_18";
+this setSpeaker "male09eng";
+
+
+//SF Weapons Combat
+
+comment "Exported from Arsenal by Lewis";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "TRYK_U_B_3CD_Delta_BDUTshirt";
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_elasticBandage";};
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_quikclot";};
+this addItemToUniform "ACE_CableTie";
+this addItemToUniform "ACE_EarPlugs";
+this addItemToUniform "ACE_MapTools";
+this addItemToUniform "ACE_microDAGR";
+this addVest "CUP_V_B_Delta_2";
+this addItemToVest "rhs_200rnd_556x45_M_SAW";
+for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_an_m8hc";};
+for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_m67";};
+this addBackpack "CUP_B_AssaultPack_Coyote";
+for "_i" from 1 to 6 do {this addItemToBackpack "ACE_epinephrine";};
+for "_i" from 1 to 2 do {this addItemToBackpack "rhs_200rnd_556x45_M_SAW";};
+this addHeadgear "CUP_H_PMC_Cap_PRR_Grey";
+this addGoggles "TRYK_Shemagh_G";
+
+comment "Add weapons";
+this addWeapon "rhs_weap_m249_pip_S";
+this addPrimaryWeaponItem "rhsusf_acc_eotech_552";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "TFAR_anprc152";
+
+comment "Set identity";
+this setFace "WhiteHead_18";
+this setSpeaker "male12eng";
